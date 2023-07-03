@@ -1,0 +1,22 @@
+alt+q -> toggle bottom bar
+shift+` -> build/run Rust
+save and run extension
+
+>settings JSON
+settings.json
+
+"files.exclude": {
+	"**/*.js": {
+		"when": "$(basename).ts"
+	}
+},
+"saveAndRun": {
+	"commands": [
+		{
+			"match": "\\.ts$",
+			"cmd": "tsc.cmd --build",
+			"silent": true
+		}
+	]
+},
+"editor.padding.top": 200
